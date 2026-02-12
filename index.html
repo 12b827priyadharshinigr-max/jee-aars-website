@@ -5,70 +5,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jee Aar’s Aromatic Candles</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;500&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 <style>
+
+/* ===== GLOBAL ===== */
+
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     background-color: #E3EAD9;
     color: #1F3A2E;
+    line-height: 1.6;
 }
 
-/* Headings */
-h1, h2, h3, .logo {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 500;
-}
+/* ===== HEADER ===== */
 
-/* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   /* Push to corners */
     align-items: center;
-    padding: 20px 60px;
-    background-color: #E3EAD9;
+    padding: 25px 60px;
 }
 
 .logo {
     font-size: 20px;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
+/* Navigation – softer like old version */
 nav a {
     text-decoration: none;
     color: #1F3A2E;
-    margin-left: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
-/* Hero Section */
+/* ===== HERO ===== */
+
 .hero {
     text-align: center;
     padding: 120px 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
     margin-bottom: 15px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 35px;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    letter-spacing: 0.3px;
 }
 
-/* Buttons */
+/* Button – old balanced style */
 .button {
     text-decoration: none;
     padding: 14px 32px;
     border: 1px solid #1F3A2E;
     color: #1F3A2E;
     font-size: 14px;
-    font-weight: 700;
     letter-spacing: 1px;
     transition: 0.3s ease;
 }
@@ -78,65 +82,96 @@ nav a {
     color: white;
 }
 
-/* Sections */
+/* ===== SECTIONS ===== */
+
 .section {
-    padding: 80px 60px;
-    background-color: #ffffff;
+    padding: 90px 60px;
+    background-color: white;
 }
 
 .section h2 {
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     margin-bottom: 20px;
 }
 
-/* Collections */
+.section p {
+    max-width: 750px;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== COLLECTIONS ===== */
+
 .collections {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 50px;
+    margin-top: 40px;
 }
 
 .collection-card {
     flex: 1;
     border: 1px solid #1F3A2E;
-    padding: 40px;
+    padding: 45px;
+    transition: 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-5px);
 }
 
 .collection-card h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
-/* Founder Section */
+.collection-card p {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+/* ===== FOUNDER ===== */
+
 .founder {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .founder p {
-    max-width: 700px;
+    max-width: 650px;
     margin: auto;
     margin-bottom: 20px;
+    font-style: italic;
     font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
-/* Instagram */
+/* ===== INSTAGRAM ===== */
+
 .instagram {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
+
 .footer {
     background-color: #1F3A2E;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
 .footer a {
     color: white;
     text-decoration: none;
 }
+
 </style>
 </head>
 
@@ -161,12 +196,18 @@ nav a {
 
 <section class="section">
     <h2>Refinement is a Choice.</h2>
-    <p>At Jee Aar’s Aromatic Candles, every batch is carefully poured with discipline, intention, and premium fragrance blends. We believe refined living is not about excess — it is about thoughtful details that transform your space.</p>
+    <p>
+        At Jee Aar’s Aromatic Candles, every batch is carefully poured with discipline, intention,
+        and premium fragrance blends. We believe refined living is not about excess —
+        it is about thoughtful details that transform your space.
+    </p>
 </section>
 
 <section class="section" style="background-color:#E3EAD9;">
     <h2>Our Collections</h2>
+
     <div class="collections">
+
         <div class="collection-card">
             <h3>The Sculpted Series</h3>
             <p>Artistic, food-inspired statement candles designed to stand out.</p>
@@ -180,17 +221,23 @@ nav a {
             <br>
             <a href="https://wa.me/919445861494" class="button">Enquire Now</a>
         </div>
+
     </div>
 </section>
 
 <section class="founder">
-    <p>"Jee Aar’s Aromatic Candles was founded with a vision to build a dependable and refined fragrance house rooted in discipline and intention."</p>
+    <p>
+        "Jee Aar’s Aromatic Candles was founded with a vision to build a dependable
+        and refined fragrance house rooted in discipline and intention."
+    </p>
     <strong>— Priyadharshini G R</strong>
 </section>
 
 <section class="instagram">
     <h2>Follow Our Journey</h2>
-    <p><a href="https://instagram.com/jee.aars" target="_blank">@jee.aars</a></p>
+    <p>
+        <a href="https://instagram.com/jee.aars" target="_blank">@jee.aars</a>
+    </p>
 </section>
 
 <footer class="footer">
